@@ -1,61 +1,130 @@
-# C-Maze
 
-**C-Maze** is a terminal-based maze game where players navigate a randomly generated maze to find the exit. Use the **WASD** keys to move, and track your time and move count as you try to reach the goal.
+# 🎮 C-Maze
 
-### 🧩 Features:
-- Customizable maze size (odd numbers only due to a bug).
-- Randomly generated maze using a backtracking algorithm.
-- Displays move counter and timer during and after a game session to track your performance.
-- Simple terminal-based controls for easy gameplay.
-- Adjustable seed for different maze patterns.
-- Clear game-over screen with option to restart or quit.
+**C-Maze** is a terminal-based maze game where players navigate randomly generated mazes to reach the exit as fast as possible.  
+Originally developed as my **first C project**, C-Maze has evolved from a simple single-player experience into a fully-featured V2 version packed with new modes, visuals, and gameplay improvements!
 
+---
 
-### 🎮 Controls:
-- **W**: Move up
-- **A**: Move left
-- **S**: Move down
-- **D**: Move right
-- **Q**: Quit the game
-- **R**: Restart the game
+## 🛠 About the Project
 
-### 🚀 How to Play:
-1. Run the program in your terminal.
-2. Choose the size of the maze or use the default one.
-3. Enter a seed for a specific map or let it generate randomly.
-4. Navigate through the maze using the **WASD** keys to reach the exit.
-6. Press **Q** to quit the game or **R** to restart if you want to try again or if the maze is impossible.
+- **V1 - Base Game**  
+  The original version focused on delivering a clean, simple gameplay experience:
+  - Randomly generated mazes using recursive backtracking.
+  - Single-player gameplay with basic WASD controls.
+  - Timer and move counter to track performance.
+  - Customizable maze size and seed-based generation.
 
-### ⚙️ Installation:
-1. Clone this repository:
-    ```bash
-    git clone https://github.com/Mnour3593/C-Maze
-    ```
+- **V2 - Enhanced Version**  
+  After gaining more experience and experimenting with new ideas (with the help of AI brainstorming via Google Gemini), C-Maze expanded into a more dynamic and feature-rich project:
+  - Multiple maze generation algorithms (Prim's, Kruskal's, Wilson's, Recursive Backtracking variants).
+  - Single and **Dual Player** modes.
+  - Bonus collectibles ('.') for scoring.
+  - Colorful Windows terminal visuals.
+  - Quick Play and fully Customizable Game modes.
+  - Score saving to `maze_scores.txt`.
+  - Improved UI and a more polished player experience.
 
-2. Navigate to the project folder:
-   ```bash
-   cd C-Maze
+> **Note:** While some V2 ideas were inspired through AI brainstorming, I personally spent countless hours fine-tuning, debugging, testing, and learning deeper programming concepts to bring the project to life.
 
-3. Compile and run:
-   ```bash
-    gcc maze_game.c -o maze_game
-    ./maze_game
+---
 
-### 🔄 Alternative Installation:
-1. Copy the source code.
-2. Paste it in your preferred editor.
-3. Compile and Run.
+## ✨ Key Features
 
-### 🐛 Known Bugs:
+- Single and Dual Player modes.
+- Multiple maze generation algorithms.
+- Bonus collectibles and scoring system.
+- Vibrant Windows console colors.
+- Fully customizable maze setup.
+- Guaranteed maze solvability checks.
+- High-score saving functionality.
 
-1. The maze may occasionally generate with a path that leads to a dead-end, requiring a restart.
-2. Player movement could be slightly delayed on slower systems.
-3. The program may crash on rare occasions if the random seed produces an unusual pattern in maze generation. Try entering your lucky numbers as seeds. (Mine's 47)
+---
 
-### 🙏 Acknowledgements:
-The inspiration for this project stemmed from a personal idea of mine, with ChatGPT offering valuable advice that influenced the overall design. I spent countless hours communicating, debugging, and refining the code myself, with ChatGPT stepping in to assist with specific challenges, like structuring the code and adding features. While I did the heavy lifting, the collaboration helped polish and improve the game, making the end result more effective and polished. Special thanks to my professor, Prof. Dr. Ahmet Gürhanlı, for his valuable lectures and teachings, which helped guide me through the development process of this project. 🎓
+## 🎮 Controls
 
+**Single Player / Player 1**
+- **W**: Move Up
+- **A**: Move Left
+- **S**: Move Down
+- **D**: Move Right
 
-License:
+**Dual Player / Player 2**
+- **Arrow Keys**: Move
 
-This project is open-source and available under the MIT License.
+> **Note:** Arrow keys also works for player 1 on single player mode.
+
+**General Controls**
+- **Q**: Quit game
+- **R**: Restart game
+
+---
+
+## 🚀 How to Play
+
+1. Compile the project using GCC or MSVC (see Installation) or run the .exe file.
+2. Choose Quick Play for a fast start or set up a Custom Game.
+3. Navigate to the exit ('E') using your controls, collecting bonuses for higher scores.
+4. In Dual Mode, compete to be the first player reaching the exit!
+5. Save your high score after completing the maze.
+
+---
+
+## 🖥 Installation (Windows Only)
+
+```bash
+git clone https://github.com/Mnour3593/C-Maze
+cd C-Maze
+gcc c-maze-v2.c -o c-maze-v2 -lws2_32 -lwinmm
+./c-maze-v2.exe
+```
+Or compile with Visual Studio/MSVC (adjust linking flags if necessary).
+
+---
+
+## 📄 Example High Score Entry
+
+```txt
+------------------------------------
+Winner: Player 2 (S)
+Name: Muhammet Nur
+Score (Dots): 30
+Moves: 37
+Time Taken: 12 seconds
+Maze Seed: 1745520772
+Maze Size: 21
+Game Mode: Dual
+Completed On: 2025-04-24 21:53:16
+------------------------------------
+```
+- Score saves to `maze_scores.txt` created in the `.exe` file's directory.
+---
+
+## 📈 Evolution Timeline
+
+- **February 2025** — First idea of developing my own game.
+- **March 2025** — Began development of **C-Maze V1** as my first C project.
+- **April 2025** — Completed V1, uploaded to GitHub.
+- **Mid-April 2025** — Started planning V2 after learning more algorithms and Windows console handling. And uploaded V1 to itch.io
+- **Late April 2025** — Released **C-Maze V2** featuring major updates like multiple algorithms, scoring, Dual Player mode, and visuals.
+
+---
+
+## 🙏 Acknowledgements
+
+Special thanks to **Prof. Dr. Ahmet Gürhanlı** for his invaluable lectures that helped shape my coding foundation.  
+Thanks to **OpenAI ChatGPT** for V1, and **Google Gemini** for V2's development.  
+While some of the feature inspirations came from AI tools, the design, debugging, coding, and final polish were driven by my own learning process and persistence.
+
+---
+
+## 📜 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
+
+---
+
+Would you also like me to quickly design a **badges** section (with C language, Windows, Terminal Game, etc. badges) at the top if you want it to look even cooler? 🎖️🚀  
+It’s super easy to add!
