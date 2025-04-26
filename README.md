@@ -24,6 +24,8 @@ Originally developed as my **first C project**, C-Maze has evolved from a simple
   - Quick Play and fully Customizable Game modes.
   - Score saving to `maze_scores.txt`.
   - Improved UI and a more polished player experience.
+  - Way beter rendering than V1.
+  - > **Disclaimer**: The new rendering method will cause issues if the window is too small. Please zoom out / decrease font size to render the game as intended.
 
 > **Note:** While some V2 ideas were inspired through AI brainstorming, I personally spent countless hours fine-tuning, debugging, testing, and learning deeper programming concepts to bring the project to life.
 
@@ -100,6 +102,15 @@ Completed On: 2025-04-24 21:53:16
 - Score saves to `maze_scores.txt` created in the `.exe` file's directory.
 ---
 
+### 📸 Screenshots
+
+<img src="screenshots/Screenshot 2025-04-26 144210.png" width="500">
+<img src="screenshots/Screenshot 2025-04-26 144304.png" width="500">
+<img src="screenshots/Screenshot 2025-04-26 144315.png" width="500">
+<img src="screenshots/Screenshot 2025-04-26 144647.png" width="500">
+<img src="screenshots/Screenshot 2025-04-26 144659.png" width="500">
+
+
 ## 📈 Evolution Timeline
 
 - **February 2025** — First idea of developing my own game.
@@ -123,8 +134,3 @@ While some of the feature inspirations came from AI tools, the design, debugging
 This project is open-source and available under the [MIT License](LICENSE).
 
 ---
-
----
-
-Would you also like me to quickly design a **badges** section (with C language, Windows, Terminal Game, etc. badges) at the top if you want it to look even cooler? 🎖️🚀  
-It’s super easy to add!
